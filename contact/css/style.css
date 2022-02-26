@@ -1,0 +1,227 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #e0e0e4;
+}
+
+header {
+	background-image: url(../img/blue_merR.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 100%;
+	height: 70vh;
+	border-bottom: 2px solid #2c3e50; 
+}
+
+nav .face {
+	font-size: 40px;
+    color: #3b5998;
+}
+
+nav .link {
+	font-size: 40px;
+    color: #0e76a8;
+}
+
+nav .fab:hover {
+	animation: icon-glitch 1s infinite;
+}
+
+@keyframes icon-glitch {
+  0% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -5px -6px rgb(33, 150, 243);
+  }
+  25% {
+    text-shadow: -5px -6px rgb(244, 67, 54), 5px 4px rgb(33, 150, 243);
+  }
+  50% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -8px 4px rgb(33, 150, 243);
+  }
+  75% {
+    text-shadow: -8px -4px rgb(244, 67, 54), -5px -4px rgb(33, 150, 243);
+  }
+  100% {
+    text-shadow: -5px 0 rgb(244, 67, 54), 5px -4px rgb(33, 150, 243);
+  }
+}
+
+#navbarCollapse {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50!important;
+    text-align: center;
+}
+
+#navbarCollapse:hover {
+	color: #ff3346!important;
+	transition: .4s all;
+	text-shadow: 0em 0em 0.1em #000000;
+}
+
+.container-flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar {
+	padding: 0px 15px;
+	background-color: #fff;
+	border-top: 5px solid  #ff3346;
+	border-bottom: 2px solid  #ff3346;
+}
+
+.navbar .logo img {
+	border-radius: 50%;
+	max-height: 70px;
+}
+
+.navbar img {
+	max-height: 90px;
+}
+
+	/* HEADER */
+
+h1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 75px;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	color: #2c3e50;
+	padding: 200px 0 0;
+}
+
+	/*  CONTACT/PLAN */
+
+#contact h2 {
+	color: #2c3e50;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	font-size: 50px;
+	padding: 30px 0 30px 5px;
+}
+
+#contact {
+	margin: 50px auto 0;
+	padding: 0;
+	width: 700px;
+	border: 1px solid #ff3346;
+	border-radius: 10px;
+	color: #2c3e50;
+	box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
+	background: #f1f1f1;
+}
+
+iframe {
+	width: 670px;
+	height: 415px;
+	padding: 0;
+}
+
+#contact, p, h5 {
+	padding: 0 0 0 5px;
+}
+
+	/*  TARIF */
+
+#tarif {
+	margin: 50px auto;
+	width: 700px;
+	border: 1px solid #ff3346;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
+	background: #f1f1f1;
+}
+
+#tarif h4 {
+	padding: 30px 0 20px;
+	color: #2c3e50;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	font-size: 50px;
+}
+
+#tarif p {
+	color: #2c3e50;
+	font-family: 'Aria', sans-serif;
+	font-size: 1.2rem;
+}
+
+#tarif .fb {
+	margin: 0 auto;
+	text-align:center;
+}
+
+#citation .img {
+	position: relative;
+} 
+
+.footer {
+	color: #2c3e50;
+	margin-top: 80px;
+	padding-top: 10px;
+	/*border-top: 1px solid #2c3e50;*/
+}
+
+	/* BOUTON RESERVATION */
+
+#reservation button {
+	display: block;
+	text-align: center;
+	background-color: #2c3e50;
+	color: #fff!important;
+	font-size: 14px;
+	overflow: hidden;
+	width: 220px;
+	height: 35px;
+	position: fixed;
+	bottom: 2px;
+	left: 2px;
+	z-index: 1000;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	line-height: 30px;
+}
+
+#reservation button span:hover {
+	color: #ff3346;
+}	
+
+@media only screen and (max-width: 940px) {
+	#reservation button {
+		width: 150px;
+		height: 35px;
+		line-height: 15px;
+		padding: 0;
+	}
+	h1 {
+		font-weight: 400;
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		height: 30vh;
+	}
+	h1 {
+		padding: 50px;
+		font-size: 50px;
+	}
+	#contact {
+		margin: 50px auto 0;
+		width: 500px;
+	}
+	#tarif {
+		margin: 50px auto;
+		width: 500px;
+	}
+	iframe {
+		width: 470px;
+	}
+}
+
+

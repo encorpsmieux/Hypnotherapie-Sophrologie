@@ -1,0 +1,433 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #e0e0e4;
+	box-sizing: border-box;
+}
+
+video {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	
+}
+
+/*
+header {
+	background-image: url(../img/blue_merR.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 100%;
+	height: 70vh;
+}
+*/
+	/* ANIMATION LOGO RESEAU SOCIAL */
+nav .face {
+	font-size: 40px;
+    color: #3b5998;
+}
+
+nav .link {
+	font-size: 40px;
+    color: #0e76a8;
+}
+
+nav .fab:hover {
+	animation: icon-glitch 1s infinite;
+}
+
+@keyframes icon-glitch {
+  0% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -5px -6px rgb(33, 150, 243);
+  }
+  25% {
+    text-shadow: -5px -6px rgb(244, 67, 54), 5px 4px rgb(33, 150, 243);
+  }
+  50% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -8px 4px rgb(33, 150, 243);
+  }
+  75% {
+    text-shadow: -8px -4px rgb(244, 67, 54), -5px -4px rgb(33, 150, 243);
+  }
+  100% {
+    text-shadow: -5px 0 rgb(244, 67, 54), 5px -4px rgb(33, 150, 243);
+  }
+}
+
+ /* NAVBAR */
+ 
+ .container-flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar {
+	padding: 0;
+	background-color: #fff;
+	border-top: 5px solid  #ff3346;
+	border-bottom: 2px solid  #ff3346;
+}
+
+.navbar .logo img {
+	border-radius: 50%;
+	max-height: 70px;
+}
+
+.navbar img {
+	max-height: 90px;
+}
+
+#navbarCollapse a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50!important;
+}
+
+#navbarCollapse a:hover {
+	color: #ff3346!important;
+	transition: .4s all;
+	text-shadow: 0em 0em 0.1em #000000;
+}
+
+	/* TITLE */
+ 
+h1 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 4.5rem;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: 1px 2px 6px #eee;
+	color: #2c3e50;
+	
+	
+	
+}
+
+	/* CONTACTEZ-MOI */
+
+.contact {
+	margin: 0;
+	margin-left: auto;
+    margin-right: auto;
+	background: #38628d;
+	border-radius: 25px;
+	box-shadow: #2c3e50 0px 3px 25px 2px;
+	height: auto;
+	border: 1px solid #2c3e50;
+	width: 400px;
+	transition: .4s all ease-in-out;
+	display: block;
+}
+
+.contact:hover {
+	background: #2c3e50;
+	box-shadow: #2c3e50 0px 3px 25px 15px;
+	border: 1px solid #ff3346;
+	cursor: pointer;
+}
+
+.contact h5 {
+	margin-bottom: 5px;
+}
+
+.minicard__content {
+	font-size: 20px;
+	margin: 15px 20px;
+	font-weight: 600;
+	color: #f1f1f1;
+	text-align: center;
+}
+
+	/* CONTENT */
+
+#content1 {
+	padding: 50px 0;
+	
+	border-bottom: 1px solid  #2c3e50;
+	/*background: #f1f1f1;*/
+}
+
+#content1 .image {
+	display: flex;
+}
+
+#content1 .img {
+	margin: auto;
+	border: 10px groove #38628d;
+	object-fit: contain;
+}
+
+#content1 p {
+	font-family: 'Raleway', sans-serif;
+	text-align: justify;
+	font-size: 22px;
+	color: #2c3e50;
+	font-weight: 500;
+}
+
+.prenom {
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	color: #2c3e50;
+	font-weight: 500;
+}
+
+#content2, #content3, #content5 {
+	padding: 10px 0;
+}
+
+.bloc, .bloc2 {
+	max-width: 1100px; 
+	margin: 100px auto;
+}
+
+.bloc3 {
+	margin: 100px auto 50px;
+}
+
+.bloc h2, .bloc2 h2, .bloc3 h2 {
+	margin: 0 0 60px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 60px;
+	color: #2c3e50;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.bloc p, .bloc2 p {
+	text-align: justify;
+	padding: 0 20px;
+	font-size: 19px;
+	font-family: 'Aria', sans-serif;
+	color: #2c3e50;
+}
+
+.bloc3 figure {
+	font-family: 'Aria', sans-serif;
+	color: #2c3e50;
+	text-align: justify;
+}
+
+.bloc3 a {
+	text-decoration: none;
+}
+
+#content4 {
+	border-top: 1px solid #2c3e50;
+	border-bottom: 1px solid #2c3e50;
+	background-image: url(../img/jetée.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	height: auto;
+	background-position: center;
+	display: block;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+#content4 .overlay {
+	background: rgba(255, 255, 255, 0.50);
+	height: auto;
+	width: 100%;
+}
+
+#content4 h2 {
+	color: #2c3e50;
+	font-weight: 500;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	font-family: 'Kaushan Script', cursive;
+}
+
+#content4 .icone {
+	text-align: center;
+}
+
+#content4 ul {
+	list-style: none;
+	text-align: center;
+}
+
+.marg {
+	padding: 3px;
+	font-size: 1.4rem;
+	font-family: 'Aria', sans-serif;
+	color: #2c3e50;
+}
+
+#content4 i {
+	cursor: pointer;
+	color: #2c3e50;
+}
+
+#content4 i:hover {
+	-webkit-animation: bounce 0.35s ease infinite alternate;
+	        animation: bounce 0.35s ease infinite alternate;
+}
+
+@-webkit-keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+
+@keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+
+#diplomes {
+	margin: 0 auto 10px;
+	/*border: 1px solid #38628d;*/
+}
+
+#diplomes h2 {
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 500;
+	font-size: 55px;
+	color: #2c3e50;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.cartes {
+	height: 30vh;
+}
+
+#diplomes .card {
+	width: 60%;
+	margin: 0 auto;
+	transition: .4s all ease-in-out;
+}
+
+#diplomes .card1, .card2, .card3, .card4 {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#diplomes .card:hover {
+	box-shadow: #2c3e50 0px 2px 10px 1px;
+}
+
+.footer {
+	margin-top: 10px;
+	color: #2c3e50;
+	padding-top: 10px;
+	/*border-top: 1px solid #2c3e50; /*#A9A9A9;*/
+}
+
+	/* CAROUSEL */
+
+#carouselExampleFade1 {
+    width: 600px;
+    padding: 10px 20px 0 20px;
+    float: right;
+}
+
+#carouselExampleFade2 {
+    width: 600px;
+    padding: 10px 20px 0 20px;
+    float: right;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #2c3e50;
+}
+
+	/* BOUTON RESERVATION */
+
+#reservation button {
+	display: block;
+	text-align: center;
+	background-color: #2c3e50;
+	color: #fff!important;
+	font-size: 14px;
+	overflow: hidden;
+	width: 220px;
+	height: 35px;
+	position: fixed;
+	bottom: 2px;
+	left: 2px;
+	z-index: 1000;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	line-height: 30px;
+}
+
+#reservation button span:hover {
+	color: #ff3346;
+}
+
+
+@media only screen and (max-width: 940px) {
+	#reservation button {
+		width: 140px;
+		height: 35px;
+		line-height: 15px;
+		padding: 0;
+	}
+	h1 {
+		font-weight: 400;
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		height: 30vh;
+	}
+	h1 {
+		padding: 50px;
+		font-size: 50px;
+	}
+	.cartes {
+		height: 60vh;
+		margin: 0 auto;
+	}
+	#diplomes {
+		margin: 50px auto 0;
+	}
+	#diplomes h2 {
+		font-weight: 400;
+		font-size: 50px;
+		margin: 0 auto 20px;
+	}
+	#diplomes .card {
+		width: 40%;
+		margin: 0 auto 5px;
+	}
+	.footer {
+		margin: 200px auto 0;
+	}
+}
+
+
+
+
+
