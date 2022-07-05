@@ -16,38 +16,6 @@ header {
 	border-bottom: 2px solid #2c3e50; 
 }
 
-nav .face {
-	font-size: 40px;
-    color: #3b5998;
-}
-
-nav .link {
-	font-size: 40px;
-    color: #0e76a8;
-}
-
-nav .fab:hover {
-	animation: icon-glitch 1s infinite;
-}
-
-@keyframes icon-glitch {
-  0% {
-    text-shadow: 5px 4px rgb(244, 67, 54), -5px -6px rgb(33, 150, 243);
-  }
-  25% {
-    text-shadow: -5px -6px rgb(244, 67, 54), 5px 4px rgb(33, 150, 243);
-  }
-  50% {
-    text-shadow: 5px 4px rgb(244, 67, 54), -8px 4px rgb(33, 150, 243);
-  }
-  75% {
-    text-shadow: -8px -4px rgb(244, 67, 54), -5px -4px rgb(33, 150, 243);
-  }
-  100% {
-    text-shadow: -5px 0 rgb(244, 67, 54), 5px -4px rgb(33, 150, 243);
-  }
-}
-
 #navbarCollapse {
     font-size: 20px;
     font-weight: 700;
@@ -63,11 +31,11 @@ nav .fab:hover {
 
 .container-flex {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .navbar {
-	padding: 0px 15px;
+	padding: 0;
 	background-color: #e2e2e2;
 	border-top: 5px solid  #ff3346;
 	border-bottom: 2px solid  #ff3346;
