@@ -137,12 +137,6 @@ iframe {
 
 
 @media only screen and (max-width: 940px) {
-	#reservation button {
-		width: 150px;
-		height: 35px;
-		line-height: 15px;
-		padding: 0;
-	}
 	h1 {
 		font-weight: 400;
 		font-size: 50px;
@@ -154,8 +148,11 @@ iframe {
 		height: 30vh;
 	}
 	h1 {
-		padding: 50px;
-		font-size: 50px;
+		padding-top: 100px;
+		font-size: 38px;
+	}
+	#contact h2 {
+		font-size: 40px;
 	}
 	#contact {
 		margin: 50px auto 0;

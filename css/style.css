@@ -51,11 +51,6 @@ video {
 }
 
  /* NAVBAR */
- 
-.container-flex {
-	display: flex;
-	justify-content: space-around;
-}
 
 .navbar {
 	padding: 0;
@@ -64,8 +59,12 @@ video {
 	border-bottom: 2px solid #ff3346;
 }
 
+.nav-item {
+	margin-right: 10px;
+}
+
 .nav-link {
-    font-size: 17px;
+	font-size: 18px;
     font-weight: 700;
     color: #2c3e50!important;
 	transition: all 0.4s ease-in-out;
@@ -520,7 +519,6 @@ h1 {
     border: 1px solid #2c3e50;
 }
 
-
 @media only screen and (max-width: 940px) {
 	h1 {
 		font-weight: 400;
@@ -535,7 +533,17 @@ h1 {
 	}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 940px) {
+	video {
+		height: 45vh;
+	}
+	h1 {
+		top: 11%;
+		font-size: 38px;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
 	header {
 		height: 30vh;
 	}
