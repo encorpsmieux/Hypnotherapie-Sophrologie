@@ -6,7 +6,7 @@ body {
 }
 
 header {
-	background-image: url(/img/blue_merR.jpg);
+	background-image: url(../img/blue_merR.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -140,8 +140,7 @@ iframe {
 }
 
 #citation .img {
-	position: relative;
-	width: 70%;
+	width: 60%;
 } 
 
 .footer {
