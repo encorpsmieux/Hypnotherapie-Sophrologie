@@ -6,7 +6,7 @@ body {
 }
 
 header {
-	background-image: url(../img/blue_merR.jpg);
+	background-image: url(/img/blue_merR.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -96,6 +96,19 @@ iframe {
 	padding: 0 0 0 5px;
 }
 
+#contact p a {
+	text-decoration: none;
+	color: #2c3e50;
+	font-size: 1.3rem;
+	font-weight: bold;
+	transition: .3s all ease-in-out;
+}
+
+#contact p a:hover {
+	color:  #ff3346;
+	text-shadow: black 0em 0em 0.1em;
+}
+
 	/*  TARIF */
 
 #tarif {
@@ -128,6 +141,7 @@ iframe {
 
 #citation .img {
 	position: relative;
+	width: 70%;
 } 
 
 .footer {
