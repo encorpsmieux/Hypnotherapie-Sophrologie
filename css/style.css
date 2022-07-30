@@ -167,6 +167,10 @@ h1 {
 	text-align: center;
 }
 
+.minicard__content p {
+	margin-bottom: 5px;
+}
+
 .minicard__content a {
 	text-decoration: none;
 	color: #f1f1f1;
@@ -464,6 +468,8 @@ h1 {
     }
 }
 
+	/* DIPLOMES */
+
 #diplomes {
 	margin: 100px auto;
 }
@@ -524,6 +530,8 @@ h1 {
     height: auto;
     border: 1px solid #2c3e50;
 }
+
+	/* RESPONSIVE */
 
 @media only screen and (max-width: 940px) {
 	h1 {

@@ -16,6 +16,14 @@ header {
 	border-bottom: 2px solid #2c3e50; 
 }
 
+h2 {
+	font-size: 50px;
+	padding: 30px 0 25px;
+	color: #2c3e50;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+}
+
 #navbarCollapse {
     font-size: 20px;
     font-weight: 700;
@@ -68,11 +76,7 @@ h1 {
 	/*  CONTACT/PLAN */
 
 #contact h2 {
-	color: #2c3e50;
-	font-family: 'Kaushan Script', cursive;
-	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
-	font-size: 50px;
-	padding: 30px 0 30px 5px;
+	
 }
 
 #contact {
@@ -120,12 +124,8 @@ iframe {
 	background: #f1f1f1;
 }
 
-#tarif h4 {
-	padding: 30px 0 20px;
-	color: #2c3e50;
-	font-family: 'Kaushan Script', cursive;
-	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
-	font-size: 50px;
+#tarif h2 {
+	
 }
 
 #tarif p {
