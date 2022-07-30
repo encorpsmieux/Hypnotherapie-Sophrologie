@@ -100,25 +100,25 @@ video {
 
 .box:before {
 	transform: rotateY(90deg) translate3D(-50px,0,50px);
-	background: url(../img/sophro10.jpg) no-repeat center/cover;
+	background: url(../img/sophro10c.jpg) no-repeat center/cover;
 	content:'';
 }
 
 .box:after {
 	transform: rotateY(90deg) rotateZ(180deg) translate3D(50px,0,-50px);
-	background: url(../img/sophro7.jpg) no-repeat center/cover;
+	background: url(../img/sophro7c.jpg) no-repeat center/cover;
 
 }
 
 .box i {
 	transform-style: preserve-3d;
 	transform: translate3D(0,0,100px);
-	background: url(../img/sophro9.jpg) no-repeat center/cover;
+	background: url(../img/sophro9c.jpg) no-repeat center/cover;
 }
 
 .box i:before {
 	transform: translate3D(0,0,-100px);
-	background: url(../img/sophro11.jpg) no-repeat center/cover;
+	background: url(../img/sophro11c.jpg) no-repeat center/cover;
 }
 
 .box i:after {
@@ -387,7 +387,7 @@ h1 {
 .bloc-P {
 	border-top: 1px solid red;
 	border-bottom: 1px solid red;
-	background-image: url(../img/jetée.jpg);
+	background-image: url(../img/jetéec.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	max-width: 100%;
