@@ -6,7 +6,7 @@ body {
 }
 
 header {
-	background-image: url(../img/blue_merR.jpg);
+	background-image: url(../img/blue_merRc.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -187,7 +187,6 @@ iframe {
 		width: 500px;
 	}
 	#tarif {
-		margin: 50px auto;
 		width: 500px;
 	}
 	iframe {
@@ -205,6 +204,10 @@ iframe {
 	}
 	#contact h2 {
 		font-size: 2rem;
+	}
+	#tarif {
+		width: 350px;
+		margin: 20px auto;
 	}
 	#tarif h4 {
 		font-size: 2rem;

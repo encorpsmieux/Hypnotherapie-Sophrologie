@@ -157,16 +157,7 @@ h1 {
 	height: auto;
 	border: 1px solid #2c3e50;
 	width: 400px;
-	
-	/*transition: .4s all ease-in-out;*/
 }
-
-/*.contact:hover {
-	background: #2c3e50;
-	box-shadow: #2c3e50 0px 3px 25px 15px;
-	border: 1px solid #ff3346;
-	cursor: pointer;
-}*/
 
 .minicard__content {
 	font-size: 20px;
@@ -518,13 +509,13 @@ h1 {
 
 #carouselExampleFade1 {
     width: 600px;
-    padding: 10px 20px 0 20px;
+    padding: 6px 20px 0 20px;
     float: right;
 }
 
 #carouselExampleFade2 {
     width: 600px;
-    padding: 10px 20px 0 20px;
+    padding: 6px 20px 0 20px;
     float: right;
 }
 
@@ -614,6 +605,11 @@ h1 {
 		height: 50vh;
 		object-fit: cover;
 	}
+	.citation {
+		margin: 20px auto 0;
+		font-weight: 700;
+		font-size: 1.2rem;
+	}
 	#content1 {
 		padding: 80px 0 50px;
 	}
@@ -631,11 +627,6 @@ h1 {
 		font-weight: 400;
 		padding: 10px 0;
 		float: right;
-	}
-	.citation {
-		margin: 20px auto 0;
-		font-weight: 700;
-		font-size: 1.3rem;
 	}
 	.bloc h2, .bloc2 h2, .bloc3 h2, .bloc4 h2, #diplomes h2 {
 		font-weight: 500;
