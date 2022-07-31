@@ -100,25 +100,25 @@ video {
 
 .box:before {
 	transform: rotateY(90deg) translate3D(-50px,0,50px);
-	background: url(../img/sophro10c.jpg) no-repeat center/cover;
+	background: url(../img/sophro10rc.jpg) no-repeat center/cover;
 	content:'';
 }
 
 .box:after {
 	transform: rotateY(90deg) rotateZ(180deg) translate3D(50px,0,-50px);
-	background: url(../img/sophro7c.jpg) no-repeat center/cover;
+	background: url(../img/sophro7rc.jpg) no-repeat center/cover;
 
 }
 
 .box i {
 	transform-style: preserve-3d;
 	transform: translate3D(0,0,100px);
-	background: url(../img/sophro9c.jpg) no-repeat center/cover;
+	background: url(../img/sophro9rc.jpg) no-repeat center/cover;
 }
 
 .box i:before {
 	transform: translate3D(0,0,-100px);
-	background: url(../img/sophro11c.jpg) no-repeat center/cover;
+	background: url(../img/sophro11rc.jpg) no-repeat center/cover;
 }
 
 .box i:after {
@@ -369,18 +369,20 @@ h1 {
 	border: 1px solid #2c3e50;
 	padding: 15px;
 	border-radius: 10px;
-	background: #F5F5F5;
-	transition: .3s all ease-in-out;
-}
-
-.bloc4 figure:hover {
-	box-shadow: #2c3e50 0px 3px 25px 2px;
-	background: #ffffff;
+	background: #fff;
+	box-shadow: #2c3e50 0px 3px 15px 2px;
+	
 }
 
 .bloc4 a {
 	text-decoration: none;
+	transition: .3s all ease-in-out;
 }
+
+.bloc4 a:hover {
+	color: #000000;
+}
+
 
 	/* PRESTATIONS */
 
@@ -513,14 +515,9 @@ h1 {
 
 	/* CAROUSEL */
 
-#carouselExampleFade1 {
+#carouselExampleFade {
     width: 600px;
-    padding: 6px 20px 0 20px;
-    float: right;
-}
-
-#carouselExampleFade2 {
-    width: 600px;
+	height: auto;
     padding: 6px 20px 0 20px;
     float: right;
 }
@@ -531,7 +528,7 @@ h1 {
     border: 1px solid #2c3e50;
 }
 
-	/* RESPONSIVE */
+	/* SECTION RESPONSIVE */
 
 @media only screen and (max-width: 940px) {
 	h1 {
@@ -555,6 +552,7 @@ h1 {
 		top: 11%;
 		font-size: 38px;
 	}
+	
 }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -595,6 +593,9 @@ h1 {
 	#diplomes .card {
 		width: 40%;
 		margin: 0 auto;
+	}
+	.logo-image {
+		width: 60%;
 	}
 	.footer {
 		margin: 50px auto 0;
