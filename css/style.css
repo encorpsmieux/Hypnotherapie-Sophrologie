@@ -19,7 +19,7 @@ body {
 
 video {
 	width: 100%;
-	height: 80vh;
+	height: 94vh;
 	object-fit: cover;
 }
 
@@ -141,10 +141,97 @@ h1 {
 	text-shadow: 1px 2px 6px #eee;
 	color: #2c3e50;
 	position: absolute;
-	top: 22%;
+	top: 25%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+}
+
+	/* BOUTON SCROLL ANIMATION */
+
+.demo a {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	transition: opacity .2s;
+}
+
+.demo a:hover {
+	opacity: .6;
+}
+#section03 a {
+	padding-top: 180px;
+}
+#section03 a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 46px;
+	height: 46px;
+	margin-left: -23px;
+	border: 3px solid #ff3346;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+#section03 a span::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	width: 16px;
+	height: 16px;
+	margin: -12px 0 0 -8px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+#section03 a span::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	content: '';
+	width: 44px;
+	height: 44px;
+	box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+	border-radius: 100%;
+	opacity: 0;
+	-webkit-animation: sdb03 2s infinite;
+	animation: sdb03 2s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+	0% {
+	  opacity: 0;
+	}
+	30% {
+	  opacity: 1;
+	}
+	60% {
+	  box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0;
+	}
+}
+@keyframes sdb03 {
+	0% {
+	  opacity: 0;
+	}
+	30% {
+	  opacity: 1;
+	}
+	60% {
+	  box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0;
+	}
 }
 
 	/* INFORMATIONS ET RENDEZ-VOUS */
@@ -187,7 +274,7 @@ h1 {
 	/* CONTENT */
 
 #content1 {
-	padding: 80px 0 50px;
+	padding: 140px 0 50px;
 	background: #f1f1f1;
 }
 
@@ -197,8 +284,10 @@ h1 {
     float: left;
 }
 
-#content1 strong {
-	font-size: 22px;
+#content1 .pre-titre {
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.1rem;
+	font-weight: 700;
 	color: #2c3e50;
 }
 
@@ -211,10 +300,10 @@ h1 {
 }
 
 .prenom {
-	font-family: 'Raleway', sans-serif;
-	font-size: 22px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.1rem;
 	color: #2c3e50;
-	font-weight: 500;
+	font-weight: 700;
 	padding: 50px 0;
 	float: right;
 }
@@ -314,7 +403,6 @@ h1 {
 	align-items: center;
 	position: relative;
 	cursor: pointer;
-	box-shadow: 0 3px 5px 0 #2c3e50;
 	transition-timing-function: ease-in-out;
 	transition-duration: 0.4s;
 	box-shadow: 0 2px 5px 0 #2c3e50;
@@ -385,6 +473,8 @@ h1 {
 }*/
 
 .bloc4 a {
+	color: #38628d;
+	font-weight: bold;
 	text-decoration: none;
 	transition: .3s all ease-in-out;
 	padding-left: 15px;
@@ -563,7 +653,20 @@ h1 {
 		top: 11%;
 		font-size: 38px;
 	}
-	
+	.logo-image {
+		width: 50%;
+		margin: 0;
+	}
+	#content1 .imgage {
+		width: 45%;
+	}
+	#content1 .pre-titre {
+		font-size: 1.9rem;
+		font-weight: 700;
+	}
+	#section03 a span {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -588,6 +691,12 @@ h1 {
 		padding: 0;
 		padding: 0 10px 0 0;
 	}
+	#content1 .pre-titre {
+		font-size: 1.6rem;
+	}
+	#section03 a span {
+		display: none;
+	}
 	.cartes {
 		height: 60vh;
 		margin: 0 auto;
@@ -607,6 +716,7 @@ h1 {
 	}
 	.logo-image {
 		width: 60%;
+		margin: 0;
 	}
 	.footer {
 		margin: 50px auto 0;
@@ -636,7 +746,10 @@ h1 {
 	#content1 .imgage {
 		width: 200px;
 	}
-	#content1 strong {
+	#section03 a span {
+		display: none;
+	}
+	#content1 .pre-titre {
 		font-size: 18px;
 	}
 	#content1 p {
@@ -678,8 +791,11 @@ h1 {
 	.bloc4 figure p {
 		font-size: 0.9rem;
 	}
-	figcaption, .bloc4 a {
-		font-size: 0.9rem;
+	.bloc4 figcaption a {
+		font-size: 0.8rem;
+	}
+	.bloc4 figcaption a i {
+		font-size: 0.6rem;
 	}
 	.minicard__content {
 		font-size: 1rem;
