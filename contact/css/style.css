@@ -103,8 +103,8 @@ iframe {
 #contact p a {
 	text-decoration: none;
 	color: #2c3e50;
-	font-size: 1.3rem;
-	font-weight: bold;
+	font-size: 1.2rem;
+	font-weight: 500;
 	transition: .3s all ease-in-out;
 }
 
