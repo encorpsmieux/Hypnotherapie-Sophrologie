@@ -610,9 +610,12 @@ h1 {
 
 .footer {
 	margin-top: 10px;
-	color: #808080;
 	padding-top: 10px;
 	background-color: #c0c0c0;
+}
+
+.footer .section-title1 {
+	color: #616161;
 }
 
 	/* CAROUSEL */
