@@ -617,7 +617,7 @@ h1 {
 
 	/* CAROUSEL */
 
-#carouselExampleFade {
+.carouselExampleFade {
     width: 600px;
 	height: auto;
     padding: 6px 20px 0 20px;
