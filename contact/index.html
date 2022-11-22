@@ -35,28 +35,9 @@
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" type="image/ico" href="../img/imagesc.ico">
-
-	<style> 
-    body { 
-        animation: fadeInAnimation ease 3s; 
-        animation-fill-mode: forwards; 
-        animation-iteration-count: 1; 
-    } 
-    @keyframes fadeInAnimation { 
-    0% 
-    { 
-    opacity: 0; 
-    } 
-    100% { 
-    opacity: 1; 
-    } 
-    } 
-    </style>
 </head>
 <body>
-
 	<!-- HEADER Nav -->
-
 	<header id="fond-img">
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 			<div class="container-fluid">
@@ -75,32 +56,47 @@
 		<h1>Hypnothérapie Ericksonienne<br> & Sophrologie</h1>
 	</header>
 
-	<!--  CONTACT/PLAN -->
+	<!-- CONTACT -->
+	<section class="contact section" id="contact">
+		<h2 class="section-title">Contact</h2>
 
-	<section id="contact">
+		<div class="contact__container bd-grid">
+			<div class="contact__info">
+				<h3 class="contact__subtitle">Email</h3>
+				<a href="mailto:franck.verardi.hypnose@gmail.com" target="_blank" title="e-mail">
+					<span class="contact__text mail">franck.verardi.hypnose@gmail.com</span></a>
+
+				<h3 class="contact__subtitle">Localisation</h3>
+				<span class="contact__text">SAINT-MAMMES / 77670 (Seine et Marne)</span>
+
+				<h3 class="contact__subtitle">Téléphone</h3>
+				<span class="contact__text tel">06 32 18 75 21</span>
+			</div>
+
+			<form action="https://formsubmit.co/franck.verardi.hypnose@gmail.com" method="POST" class="contact__form">
+				<div class="contact__inputs">
+					<input type="text" name="name" placeholder="Nom & prenom :" class="contact__input" required>
+					<input type="email" name="email" placeholder="E-mail :" class="contact__input" required>
+				</div>
+				<textarea name="message" rows="8" class="contact__input" placeholder="Votre message :"></textarea>
+				<input type="submit" class="contact__button">
+			</form>
+		</div>
+	</section>
+
+	<!-- PLAN -->
+	<section id="plan">
 		<div class="container">
 			<div class="row">
-				<h2>Plan & itinéraire</h2>
-				<div class="col-md-6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.761424033751!2d2.816246785691039!3d48.38431908203291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ef5fb558894563%3A0x8fea81ca8c9909c9!2sVerardi%20Franck!5e0!3m2!1sfr!2sfr!4v1653753512784!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				
-					<h5 class="mt-3">Adresse :</h5>
-					<p>42 RUE DU PORT DE LA CELLE</p>
-					<h5>Ville :</h5>
-					<p>SAINT-MAMMES</p>
-					<h5>Département :</h5>
-					<p>77670 (Seine et Marne)</p>
-					<h5>téléphone :</h5>
-					<p>06 32 18 75 21</p>
-					<h5>Email :</h5>
-					<p><a href="mailto:franck.verardi.hypnose@gmail.fr" target="_blank" title="lien vers messagerie">franck.verardi.hypnose@gmail.fr</a></p>
+				<h2>Itinéraire</h2>
+				<div class="col-md-8 mx-auto">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.761424033751!2d2.816246785691039!3d48.38431908203291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ef5fb558894563%3A0x8fea81ca8c9909c9!2sVerardi%20Franck!5e0!3m2!1sfr!2sfr!4v1653753512784!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!--  TARIF -->
-
 	<section id="tarif">
 		<div class="container">
 			<div class="row">
@@ -123,7 +119,6 @@
 	</div>
 
 	<!-- FOOTER -->
-
 	<div class="footer text-center">
 		<div class="container">
 		 <div class="row">
@@ -133,8 +128,5 @@
 		 </div>
 		</div>
   </div>
-	 
-	
-	
 </body>
 </html>

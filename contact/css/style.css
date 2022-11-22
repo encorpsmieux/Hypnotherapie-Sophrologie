@@ -3,6 +3,19 @@ body {
 	padding: 0;
 	height: 100vh;
 	background-color: #e0e0e4;
+
+	animation: fadeInAnimation ease 3s; 
+	animation-fill-mode: forwards; 
+	animation-iteration-count: 1; 
+ 
+	@keyframes fadeInAnimation { 
+		0% { 
+		opacity: 0; 
+		}	 
+		100% { 
+		opacity: 1; 
+		} 
+	}
 }
 
 header {
@@ -22,6 +35,7 @@ h2 {
 	color: #2c3e50;
 	font-family: 'Kaushan Script', cursive;
 	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	text-align: center;
 }
 
 #navbarCollapse {
@@ -75,19 +89,87 @@ h1 {
 
 	/*  CONTACT/PLAN */
 
-#contact h2 {
-	
+#contact {
+	margin: 0 auto;
+	background: #f1f1f1;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #2c3e50;
+	padding-bottom: 3rem;
+	width: 100%;
 }
 
-#contact {
-	margin: 50px auto 0;
-	padding: 0;
-	width: 700px;
-	border: 1px solid #ff3346;
-	border-radius: 10px;
+#contact h2 {
+	padding: 3rem 0 4rem;
+}
+
+.bd-grid {
+	max-width: 1000px;
+    display: grid;
+    grid-column-gap: 1rem;
+	margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.contact__container {
+    row-gap: 2rem;
+}
+
+.contact__info {
+    margin: auto;
+}
+
+.contact__subtitle {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.contact__text {
+	font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
 	color: #2c3e50;
-	box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
-	background: #f1f1f1;
+	transition: all .5s;
+}
+
+.contact__text.mail:hover {
+    color: #000;
+}
+
+.contact__inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+}
+
+.contact__input {
+    width: 100%;
+    padding: .5rem;
+    outline: none;
+    border: 1.5px solid #2c3e50;
+    font-size: .938rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+}
+
+.contact__button {
+    display: block;
+    background-color: #2c3e50;
+    color: #FAFAFF;
+    padding: .55rem 2rem;
+    margin-left: auto;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    border: 1px solid #2c3e50;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.contact__button:hover {
+    background-color: #FAFAFF;
+    color: #2c3e50;
+    border: 1px solid #2c3e50;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 25px 5px;
 }
 
 iframe {
@@ -96,36 +178,14 @@ iframe {
 	padding: 0;
 }
 
-#contact, p, h5 {
-	padding: 0 0 0 5px;
-}
-
-#contact p a {
-	text-decoration: none;
-	color: #2c3e50;
-	font-size: 1.2rem;
-	font-weight: 500;
-	transition: .3s all ease-in-out;
-}
-
-#contact p a:hover {
-	color:  #ff3346;
-	text-shadow: black 0em 0em 0.1em;
-}
-
 	/*  TARIF */
 
 #tarif {
 	margin: 50px auto;
-	width: 700px;
-	border: 1px solid #ff3346;
-	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
 	background: #f1f1f1;
-}
-
-#tarif h2 {
-	
+	border-top: 1px solid #2c3e50;
+	border-bottom: 1px solid #2c3e50;
+	box-sizing: border-box;
 }
 
 #tarif p {
@@ -144,20 +204,54 @@ iframe {
 } 
 
 .footer {
-	margin-top: 10px;
+	margin-top: 50px;
 	padding-top: 10px;
 	background-color: #c0c0c0;
 }
 
-.footer .section-title1 {
-	color: #616161;
+.footer .section-subtitle {
+	font-size: .9rem;
 }
 
+.footer .section-title1 {
+	color: #616161;
+	font-size: .9rem;
+}
+
+
+@media screen and (min-width: 991px) {
+	body {
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+	.contact__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+	
+	.contact__form {
+        width: 380px;
+		margin: 0 auto;
+    }
+	iframe {
+		width: 100%;
+	}
+}
 
 @media only screen and (max-width: 940px) {
 	h1 {
 		font-weight: 400;
 		font-size: 50px;
+	}
+	iframe {
+		width: 100%;
 	}
 }
 
