@@ -646,10 +646,6 @@ h1 {
 	/* SECTION RESPONSIVE */
 
 @media only screen and (max-width: 940px) {
-	h1 {
-		font-weight: 400;
-		font-size: 50px;
-	}
 	.container-bloc {
 		max-width: 600px;
 	}
@@ -697,7 +693,7 @@ h1 {
 		font-size: 32px;
 	}
 	.contact {
-		width: 300px;
+		width: 380px;
 	}
 	#content1 .imgage {
 		width: 200px;
@@ -707,6 +703,15 @@ h1 {
 	}
 	#content1 .pre-titre {
 		font-size: 1.6rem;
+	}
+	#content1 p, .citation {
+		font-size: 1.1rem;
+	}
+	#content2 p {
+		font-size: 1.1rem;
+	}
+	#content3 p {
+		font-size: 1.1rem;
 	}
 	#section03 a span {
 		display: none;
