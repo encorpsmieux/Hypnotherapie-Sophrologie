@@ -286,6 +286,7 @@ h1 {
 #content1 {
 	padding: 140px 0 50px;
 	background: #f1f1f1;
+	box-shadow: inset 0px -1px 0px #c5c5c6;
 }
 
 #content1 .imgage {
@@ -330,11 +331,7 @@ h1 {
 
 #content2, #content5, #content6 {
 	padding: 30px 0;
-}
-
-#content2 {
-	border-top: 1px solid #34495e;
-}
+} 
 
 #content3 {
 	padding: 30px 0 0;
