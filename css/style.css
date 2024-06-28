@@ -22,10 +22,10 @@ body {
 }
 
 .container-iframe {
-	background: #f1f1f1;
+	background: #c0c0c0;
 	border-bottom: 3px solid;
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
-	padding-bottom: 45px;
+	padding-bottom: 20px;
 }
 
 video {
@@ -66,8 +66,8 @@ video {
 .navbar {
 	padding: 0;
 	background-color: #ebebeb;
-	border-top: 5px solid #ff3346;
-	border-bottom: 2px solid #ff3346;
+	border-top: 5px solid #2c3e50;
+	border-bottom: 2px solid #2c3e50;
 }
 
 .nav-item {
@@ -170,9 +170,11 @@ h1 {
 .demo a:hover {
 	opacity: .6;
 }
+
 #section03 a {
 	padding-top: 180px;
 }
+
 #section03 a span {
 	position: absolute;
 	top: 0;
@@ -184,6 +186,7 @@ h1 {
 	border-radius: 100%;
 	box-sizing: border-box;
 }
+
 #section03 a span::after {
 	position: absolute;
 	top: 50%;
@@ -198,6 +201,7 @@ h1 {
 	transform: rotate(-45deg);
 	box-sizing: border-box;
 }
+
 #section03 a span::before {
 	position: absolute;
 	top: 0;
@@ -213,6 +217,7 @@ h1 {
 	animation: sdb03 2s infinite;
 	box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb03 {
 	0% {
 	  opacity: 0;
@@ -250,15 +255,14 @@ h1 {
 	margin: 0 auto;
 	background: #38628d;
 	border-radius: 25px;
-	box-shadow: #2c3e50 0px 3px 25px 8px;
+	box-shadow: #2c3e50 0px 1px 15px 2px;
 	height: auto;
-	border: 1px solid #2c3e50;
 	width: 400px;
 }
 
 .minicard__content {
 	font-size: 20px;
-	margin: 15px 20px;
+	margin: 10px 20px 15px;
 	font-weight: 300;
 	color: #f1f1f1;
 	text-align: center;
@@ -284,36 +288,30 @@ h1 {
 	/* CONTENT */
 
 #content1 {
-	padding: 140px 0 50px;
-	background: #f1f1f1;
-	box-shadow: inset 0px -1px 0px #c5c5c6;
-}
-
-#content1 .imgage {
-	width: 400px;
-    padding: 10px 20px 0 0;
-    float: left;
-}
-
-#content1 .pre-titre {
-	font-family: 'Dancing Script', cursive;
-	font-size: 2.1rem;
-	font-weight: 700;
-	color: #2c3e50;
+	padding: 120px 0 40px;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+	background-image: linear-gradient(rgba(185, 199, 206, 0.74),rgba(172, 185, 199, 0.774)),url(../img/free.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
 #content1 p {
 	font-family: 'Raleway', sans-serif;
 	text-align: justify;
-	font-size: 20px;
+	font-size: 1.5rem;
 	padding: 0;
-	color: #2c3e50;
 }
 
 .prenom {
 	font-family: 'Dancing Script', cursive;
-	font-size: 2.1rem;
-	color: #2c3e50;
+	font-size: 2.5rem;
+	/*color: #2c3e50;*/
 	font-weight: 700;
 	padding: 50px 0;
 	float: right;
@@ -321,12 +319,10 @@ h1 {
 
 .citation {
 	margin: 20px auto 0;
-	padding-bottom: 50px;
+	/*padding-bottom: 30px;*/
 	color: #2c3e50;
 	font-weight: 700;
 	font-size: 30px;
-	border-bottom: 3px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
 #content2, #content5, #content6 {
@@ -510,7 +506,6 @@ h1 {
 	background-position: center;
 	display: block;
 	position: relative;
-	
 }
 
 #content4 .overlay {
@@ -623,6 +618,7 @@ h1 {
 
 .footer .section-title1 {
 	color: #616161;
+	font-size: 0.7rem;
 }
 
 	/* CAROUSEL */
