@@ -262,7 +262,7 @@ h1 {
 .minicard__content {
 	font-size: 20px;
 	margin: 10px 20px 15px;
-	font-weight: 300;
+	font-weight: bold;
 	color: #f1f1f1;
 	text-align: center;
 }
